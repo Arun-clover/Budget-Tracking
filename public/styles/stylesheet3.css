@@ -1,0 +1,53 @@
+body
+{
+ background-image: url("/img/bg3.jpg");
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-attachment: fixed;
+}
+#for-table
+{
+ width: 500px;
+ background-color: rgba(191, 206, 206, 0.5);
+ border: solid;
+margin-top: 60px;
+height: 300px;
+border-radius: 10px;
+color: black;
+font-weight: bold;
+opacity: 0.9;
+}
+#f
+{
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    text-align: end;
+}
+h1{
+    text-align: center;
+    font-size: 50px;
+}
+footer
+{
+   background-color: black;
+   color: white;
+   width: 100%;
+   height: 150px;
+   padding: 50px;
+   margin-top: 10px;
+   text-align: center;
+}
+b{
+    font-size:25px;
+}
+footer a{
+    color: gold;
+}
+#btn{
+    border-radius: 20px;
+    background-color: green;
+    color: white;
+    padding: 10px;
+}

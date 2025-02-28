@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Personal Budget Plan</title>
+   <link rel="stylesheet" href="/styles/stylesheet2.css">
+   <link rel="icon" href="/icon/icon1.png">
+   <h1>Personal budget Tracking</h1>
+</head>
+<script>
+   const myfunction=()=>{
+      let a=document.getElementById("1");
+      let b=document.getElementById("2");
+      let c=document.getElementById("3");
+      let d=document.getElementById("4");
+      let e=document.getElementById("5");
+      let f=document.getElementById("6");
+      let g=document.getElementById("7");
+      let result=document.getElementById("result");
+      let btn=document.getElementById("btn");
+      btn.addEventListener("click",()=>{
+         const total=Number(a.value)+Number(b.value)+Number(c.value)+Number(d.value)+Number(e.value)+Number(f.value)+Number(g.value);
+         console.log(total);
+         result.innerHTML=`<h3>${total}</h3>`;
+      });
+   }
+document.addEventListener("DOMContentLoaded",myfunction);
+</script>
+<body>
+   <hr>
+   <center>
+   <form id="form">
+      <hr>
+   <center>
+   <form id="form">
+      <table>
+         <tr>
+            <thead>
+              <b> Budget Calculator</b>
+            </thead>
+            <tr><hr></tr>
+         </tr>
+            <tr>
+               <td>Income:</td>
+               <td><input  placeholder="per month" value=0 id="1" ></td>
+            </tr>
+            <tr>
+               <td>Fixed Payment:</td>
+               <td><input  placeholder="per month" id="2"  value="0"></td>
+            </tr>
+            <tr>
+               <td>Variable Expenses:</td>
+               <td><input placeholder="per month" id="3" value="0" ></td>
+            </tr>
+            <tr>
+               <td>Saving & Invesment:</td>
+               <td><input placeholder="per month" id="4"  value="0"></td>
+            </tr>
+            <tr>
+               <td>Debt Payment:</td>
+               <td><input placeholder="per month" id="5" value="0"></td>
+            </tr>
+            <tr>
+               <td>Miscellaneous Expenses:</td>
+               <td><input placeholder="per month" id="6" value="0"></td>
+            </tr>
+            <tr>
+               <td>Goals:</td>
+               <td><input placeholder="per month" id="7" value="0"></td>
+            </tr>
+            <tr>
+               <td><input type="button"  value="Calculate" id="btn"></td>
+               <td><p id="result">Result</p></td>
+            </tr>
+
+      </table>
+   </form>
+   </center>
+   <footer>
+      <a href="../html/page1.html"> Home</a> |
+      <a href="../html/page3.html">Business</a> |
+      <a href="../html/page4.html">Marketing budget </a> |
+      <a href="../html/page5.html">Project budget </a> 
+   </footer>
+</body>
+</html>

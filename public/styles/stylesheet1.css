@@ -1,0 +1,46 @@
+body{
+   background-color:#ddeaed;
+}
+#nav 
+{
+   border-style: solid;
+   border-color: black;
+   text-align: right;
+   border-radius: 10px;
+   height: 25px;
+   margin-top: 10px;
+}
+div{
+   display: flex;
+}
+p{
+   justify-content: center;
+}
+footer {
+   background-color: #000000;
+   color: white; 
+   text-align: center;
+   padding: 20px;
+   width: 100%;
+   height: 100px;
+   margin-top: 20px;
+
+}
+.hr
+{
+   width: 1px;
+   height: 500px;
+   margin-left: 10px;
+}
+.vr
+{
+   width: 1px;
+   height: 500px;
+   margin-right: 10px;
+}
+.a
+{
+   color: #ffffff;
+   background-color: green;
+   border-radius:5px;
+}

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project budget tracking</title>
+    <link rel="stylesheet" href="/styles/stylesheet5.css">
+   <link rel="icon" href="/icon/icon1.png">
+</head>
+<body>
+    <h1>Project Budget Tracking</h1>
+    <hr>
+    <center>
+        <form id="table">
+           <table>
+                 <tr>
+                 <thead>
+                   <b> Project Budget Calculator</b>
+                 </thead>
+                 <tr><hr></tr>
+                 </tr>
+                 <tr>
+                    <td>Initial Budget Estimate:</td>
+                    <td><input type="number" placeholder="per month" id="1"></td>
+                 </tr>
+                 <tr>
+                    <td>Work Breakdown Structure:</td>
+                    <td><input type="number" placeholder="per month" id="2"></td>
+                 </tr>
+                 <tr>
+                    <td> Cost Baseline:</td>
+                    <td><input type="number" placeholder="per month" id="3"></td>
+                 </tr>
+                 <tr>
+                    <td> Actual Costs (AC):</td>
+                    <td><input type="number" placeholder="per month" id="4"></td>
+                 </tr>
+                 <tr>
+                    <td>Earned Value (EV):</td>
+                    <td><input type="number" placeholder="per month" id="5"></td>
+                 </tr>
+                 <tr>
+                    <td> Planned Value :</td>
+                    <td><input type="number" placeholder="per month" id="6"></td>
+                 </tr>
+                 <tr>
+                    <td> Variance Analysis:</td>
+                    <td><input type="number" placeholder="per month" id="7"></td>
+                 </tr>
+                 <tr>
+                    <td>Change Requests:</td>
+                    <td><input type="number" placeholder="per month" id="8"></td>
+                 </tr>
+                 <tr>
+                    <td>Forecasting:</td>
+                    <td><input type="number" placeholder="per month" id="9"></td>
+                 </tr>
+                 <tr>
+                    <td>Reporting Mechanisms:</td>
+                    <td><input type="number" placeholder="per month" id="10"></td>
+                 </tr>
+                 <tr>
+                    <td>Stakeholder Communication:</td>
+                    <td><input type="number" placeholder="per month" id="11"></td>
+                 </tr>
+                 <tr>
+                    <td>Contingency Planning:</td>
+                    <td><input type="number" placeholder="per month" id="12"></td>
+                 </tr>
+                  <tr>
+                     <td><input type="button"  value="Calculate" id="btn"></td>
+                     <td><p id="result">Total</p></td>
+                  </tr>
+           </table>
+        </form>
+        <footer>
+            <a href="../html/page1.html"> Home</a> |
+            <a href="../html/page2.html">Personal Budget </a> |
+            <a href="../html/page3.html">Business </a> |
+            <a href="../html/page4.html">Marketing Budget </a> 
+        </footer>
+        <script>
+         const myfunction=()=>{
+            let a=document.getElementById("1");
+            let b=document.getElementById("2");
+            let c=document.getElementById("3");
+            let d=document.getElementById("4");
+            let e=document.getElementById("5");
+            let f=document.getElementById("6");
+            let g=document.getElementById("7");
+            let h=document.getElementById("8");
+            let i=document.getElementById("9");
+            let j=document.getElementById("10");
+            let k=document.getElementById("11");
+            let l=document.getElementById("12");
+            let result=document.getElementById("result");
+            let btn=document.getElementById("btn");
+            btn.addEventListener("click",()=>{
+               const total=Number(a.value)+Number(b.value)+Number(c.value)+Number(d.value)+Number(e.value)+Number(f.value)+Number(g.value)+Number(h.value)+Number(i.value)+Number(j.value)+Number(k.value)+Number(l.value);
+               console.log(total);
+               result.innerHTML=`<h3>The budget is ${total}</h3>`;
+            });
+         }
+      document.addEventListener("DOMContentLoaded",myfunction);
+      </script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body{
+    background-image: url("/img/bg5.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+#table
+{
+    width: 350px;
+    height: 450px;
+    border: solid;
+    background-color: rgb(115, 131, 131,0.7);
+    margin-top: 40px;
+    font-weight: bold;
+}
+h1
+{
+text-align:center;
+font-size: 75px;
+color: rgb(0, 0, 0);
+}
+.a
+{
+    color:white;
+    background-color: green;
+    border-radius: 10px;
+}
+footer
+{
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    padding: 20px;
+    margin-top: 10px;
+    color: white;
+}
+a{
+    color: gold;
+}
+#btn
+{
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+}

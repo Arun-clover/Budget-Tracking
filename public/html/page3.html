@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Budget plan</title>
+    <link rel="stylesheet" href="/styles/stylesheet3.css">
+    <link rel="icon" href="/icon/icon1.png">
+</head>
+<body>
+    <h1>Business Budget calculation</h1>
+    <hr>
+    <center>
+        <form id="for-table">
+            <table>
+                <thead> <tr>
+                   <b>Budget Calculation</b>
+                </tr></thead>
+                <hr>
+                <tr>
+                    <td>Revenue(Income):</td>
+                    <td><input id="a" type="number" placeholder="total Revenue "></td>
+                </tr>
+                <tr>
+                    <td>Expense:</td>
+                    <td><input id="b" type="number" placeholder="total fixed costs"></td>
+                </tr>
+                <tr>
+                    <td> Savings and Investments:</td>
+                    <td><input id="c" type="number" placeholder="total savings and invesments"></td>
+                </tr>
+                <tr>
+                    <td> Miscellaneous:</td>
+                    <td><input id="d" type="number" placeholder="total Miscellaneous"></td>
+                </tr>
+                <tr>
+                <td><input id="btn" type="button" value="Calculate"></td>
+                <td><p id="result">Total</p></td>             
+                </tr>
+            </table>
+        </form>
+    </center>
+    <footer>
+    <a href="../html/page1.html"> Home</a> |
+    <a href="../html/page2.html">PersonalBudget </a> |
+    <a href="../html/page4.html">Marketing budget </a> |
+    <a href="../html/page5.html">Project budget </a> 
+    </footer>
+    <script>
+        const myfunction=()=>{
+           let a=document.getElementById("a");
+           let b=document.getElementById("b");
+           let c=document.getElementById("c");
+           let d=document.getElementById("d");
+           let result=document.getElementById("result");
+           let btn=document.getElementById("btn");
+           btn.addEventListener("click",()=>{
+              const total=Number(a.value) - (Number(b.value)+Number(c.value)+Number(d.value));
+              console.log(total);
+              result.innerHTML=`<h2>Budget is ${total}</h2>`;
+           });
+        }
+     document.addEventListener("DOMContentLoaded",myfunction);
+     </script>
+</body>
+</html>
